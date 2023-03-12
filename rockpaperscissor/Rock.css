@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  } 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("photu.jpg");
+    background-repeat:no-repeat;
+    background-size: cover; */
+}
+.button{
+  font-weight: bold;
+  font-size: 20px;
+}
+#rock{
+  background-color: #524a3a78;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(253, 255, 205);
+}
