@@ -1,0 +1,15 @@
+.grid{
+    width: 615px;
+    height: 615px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.Square{
+    height: 200px;
+    width: 200px;
+    border:solid black ;
+}
+.mole{
+    background-image: url('mole1.jpg');
+    background-size: cover;
+}
