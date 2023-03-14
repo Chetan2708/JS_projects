@@ -30,25 +30,28 @@ function getrandom() {
 
 function getresult() {
   if (computerdisplay === userchoice) {
-    res = "Its a draw";
+    res = "Its a draw!";
   }
   if (computerdisplay === "rock" && userchoice === "scissor") {
-    res = "Computer wins";
+    res = "Computer wins!";
   }
   if (userchoice === "rock" && computerdisplay === "scissor") {
-    res = "user wins";
+    res = "User wins";
+  }
+  if (computerdisplay==="rock" && userchoice === "paper"){
+    res = "User wins";
   }
   if (computerdisplay === "paper" && userchoice === "scissor") {
-    res = "user wins";
+    res = "User wins";
   }
   if (computerdisplay === "paper" && userchoice === "rock") {
     res = "Computer wins";
   }
   if (computerdisplay === "scissor" && userchoice === "rock") {
-    res = "user wins";
+    res = "User wins";
   }
   if (computerdisplay === "scissor" && userchoice === "paper") {
-    res = " computer wins";
+    res = "Computer wins";
   }
   result.innerHTML = res
 }
