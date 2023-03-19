@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.wrapper{
+    width: 80vmin ;
+    padding :50px 40px;
+    background: black;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    border-radius: 10px;
+    /* overflow: auto; */
+}
+
+.emoji{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+}
+p{
+    font-size: 16px;
+    color:aliceblue;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 30px;
+    margin:30px;
+    opacity:0;
+}
+.fade{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+button{
+    background-color: aqua;
+    color:black;
+    font-weight: bold;
+    margin-left:160px;
+    border:none;
+    padding:5px;
+    font-size: 20px;
+    cursor: pointer;
+}
