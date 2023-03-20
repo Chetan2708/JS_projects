@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,300;0,400;1,600;1,800&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+
+
+body{
+background-image: linear-gradient(120deg, #f6d365,#fda085);
+font-family:'Poppins',sans-serif;
+min-height: 100vh;
+margin-left: 40px;
+
+
+}
+h1{
+    font-size: 3em;
+}
+h1,form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%; */
+    margin-top: 10px; 
+}
+form input{
+    border-radius: 10px 0px 0px 10px;
+}
+
+form button{
+    border-radius:  0px 10px  10px 0px;
+    color:#d88771;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+form input, form button{
+    padding: 0.5rem;
+    border:none;
+    font-size: 1.5rem;
+    background:white; 
+}
+form button:hover{
+    background-color: #d9785d;
+    color: aliceblue;
+}
+.todo-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo{
+    margin:0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo li{
+    flex:1
+}
+
+.Trash, .Checked{
+    background: #ff6f47;
+    padding:1rem;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.Trash:hover {
+    background-color: #ff0000;
+}
+.Checked{
+    background: rgb(66, 213, 66);
+}
+.Checked:hover{
+    background-color: rgb(77, 159, 40);
+}
+.fa-circle-check ,.fa-trash{
+    pointer-events: none;
+}
+.complete{
+    text-decoration:line-through;
+    opacity:0.5;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+.selected {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.selected::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  }
+.selected:hover::after {
+    transform: scale(1.5);
+    background: white;
+}
