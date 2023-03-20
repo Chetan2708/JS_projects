@@ -65,28 +65,26 @@ if(e.target.classList[0]=="Checked"){
 //Select tags
 
 
-// function tags(e) {
-//     const todos = todolist.childNodes;
-//     todos.forEach(function(todo) {
-//       switch (e.target.value) {
-//         case "All":
-//          console.log(e.target.value)
-//           todo.style.display = "flex";
-//           break;
-//         case "Completed":
-//           if (todo.classList.contains("Checked")) {
-//             console.log(e.target.value)
-//             todo.style.display = "flex";
-//           } else {
-//             todo.style.display = "none";
-//           }
-//           break;
-//         case "Uncompleted":
-//           if (!todo.classList.contains("Checked")) {
-//             todo.style.display = "flex";
-//           } else {
-//             todo.style.display = "none";
-//           }
-//       }
-//     });
-//   }
+function tags(e) {
+    const todos = todolist.childNodes;
+    todos.forEach(function(todo) {
+      switch (e.target.value) {
+        case "All":
+          todo.style.display = "flex";
+          break;
+        case "Completed":
+          if (todo.classList.contains("complete")) {
+            todo.style.display = "flex";
+          } else {
+            todo.style.display = "none";
+          }
+          break;
+        case "Uncompleted":
+          if (!todo.classList.contains("complete")) {
+            todo.style.display = "flex";
+          } else {
+            todo.style.display = "none";
+          }
+      }
+    });
+  }
