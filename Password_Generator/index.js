@@ -15,7 +15,7 @@ const generatepas=()=>{
     let static = "",
     randompw= "",
     Excludeduplicate=false,
-    passlength = lengthSlider.value
+    passlength = lengthSlider.value 
 
     options.forEach(option => {
         if (option.checked){
