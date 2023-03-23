@@ -1,57 +1,53 @@
-const lengthSlider = document.querySelector(".pass-length input");
-const options = document.querySelectorAll(".options input");
-const copyIcon = document.querySelector(".input-text span");
-const passwordInput = document.querySelector(".input-text input");
-const generateBtn = document.querySelector(".generate");
+const lengthSlider=document.querySelector(".pass-length input");
+const options=document.querySelectorAll(".option input");
+const button=document.querySelector(".generate");
+const copy=document.querySelector(".input-text span");
+const Password=document.querySelector(".input-text input");
 
-const characters = {
+const char= {
     lowercase: "abcdefghijklmnopqrstuvwxyz",
-    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    numbers: "0123456789",
-    symbols: "!$%&|[](){}:;.,*+-#@<>~"
+    uppercase:"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    number:"0123456789",
+    symbols:"!@#$%^&*(){}[]>?/~"
 }
 
-const generatePassword = () => {
-    let staticPassword = "",
-        randomPassword = "",
-        excludeDuplicate = false,
-        passLength = lengthSlider.value;
+const generatepas=()=>{
+    let static = "",
+    randompw= "",
+    Excludeduplicate=false,
+    passlength = lengthSlider.value
 
     options.forEach(option => {
-        if (option.checked) {
-            if (option.id !== "exc-duplicate" && option.id !== "spaces") {
-                staticPassword += characters[option.id];
-            } else if (option.id === "spaces") {
-                staticPassword += `  ${staticPassword}  `;
-            } else {
-                excludeDuplicate = true;
+        if (option.checked){
+            if(option.id!="Exclude-duplicates"&&option.id!="Include space"){
+                static+=char[option.id]
+            }else if(option.id=="Include space"){
+                static+=` ${static} `
+            }else{
+                Excludeduplicate=true;
             }
         }
+        
     });
-
-    for (let i = 0; i < passLength; i++) {
-        let randomChar = staticPassword[Math.floor(Math.random() * staticPassword.length)];
-        if (excludeDuplicate) {
-            !randomPassword.includes(randomChar) || randomChar == " " ? randomPassword += randomChar : i--;
+    for (let i = 0; i < passlength; i++) {
+        let randomChar = static[Math.floor(Math.random()*static.length)];
+        if (Excludeduplicate) {
+            !randompw.includes(randomChar) || randomChar == " " ? randompw += randomChar : i--;
         } else {
-            randomPassword += randomChar;
+            randompw += randomChar;
         }
     }
-    passwordInput.value = randomPassword;
-    console.log(randomPassword);
+   Password.value = randompw;
+
+    }
+const copyIcon=()=>{
+    navigator.clipboard.writeText(Password.value)
+    copy.innerHTML = "check"
+    copy.style.color = "#4285f4";
+    setTimeout(()=>{
+        copy.innerText = "copy_all";
+        copy.style.color = "#707070";
+    },1500)
 }
-
-
-
-const copyPassword = () => {
-    navigator.clipboard.writeText(passwordInput.value);
-    copyIcon.innerText = "check";
-    copyIcon.style.color = "#4285f4";
-    setTimeout(() => {
-        copyIcon.innerText = "copy_all";
-        copyIcon.style.color = "#707070";
-    }, 1500);
-}
-
-copyIcon.addEventListener("click", copyPassword);
-generateBtn.addEventListener("click", generatePassword);
+    copy.addEventListener("click",copyIcon)
+    button.addEventListener("click" , generatepas)
