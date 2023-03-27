@@ -3,7 +3,7 @@ const textarea = document.getElementById('textarea')
 
 textarea.focus()
 
-textarea.addEventListener('keyup', (e) => {
+textarea.addEventListener('keyup', (e) => { 
     createTags(e.target.value)
 
     if(e.key === 'Enter') {
@@ -20,7 +20,7 @@ function createTags(input) {
     
     tagsEl.innerHTML = ''
 
-    tags.forEach(tag => {
+    tags.forEach(tag => { 
         const tagEl = document.createElement('span')
         tagEl.classList.add('tag')
         tagEl.innerText = tag
