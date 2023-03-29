@@ -16,7 +16,7 @@ body {
   left: 50%;
   top: 50%;
   border-radius: 10px;
-  box-shadow: 0 50px 50px rgba(7, 20, 35, 0.2);
+  box-shadow:  0 50px 50px rgba(7, 20, 35, 0.2);
 }
 .options{
     display:flex;
@@ -62,7 +62,7 @@ input[type="color"]{
 }
 input[type="color"]::-moz-color-swatch{         /*  for firefox */
     border-radius: 15px;
-    box-shadow: 0 0 0 2px #fff , 0 0 0 3px #020929 ;
+    box-shadow:  0 0 0 2px #fff , 0 0 0 3px #020929 ;
 }
 #text-input{
     margin-top:10px;
