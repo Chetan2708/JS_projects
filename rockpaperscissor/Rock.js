@@ -4,7 +4,7 @@ const result = document.getElementById("result");
 const but = document.querySelectorAll("button");
 let userchoice;
 let computerdisplay;
-let res;
+let  res;
 but.forEach((but) =>
   but.addEventListener("click", (e) => {
     userchoice = e.target.id;
