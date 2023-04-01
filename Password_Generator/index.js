@@ -38,7 +38,6 @@ const generatepas=()=>{
         }
     }
    Password.value = randompw;
-
     }
 const copyIcon=()=>{
     navigator.clipboard.writeText(Password.value)
