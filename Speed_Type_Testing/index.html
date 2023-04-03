@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type-Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats">
+        <p>Time:<span id="time">0s</span></p>
+        <p>Mistakes:<span id="mistake">0</span></p>
+      </div>
+      <div
+        class="quotes"
+        onmousedown="return false"
+        onselectstart="return false"
+      >
+      </div>
+      <textarea
+        id="Input"
+        rows="3"
+        placeholder="Type your text here "
+      ></textarea>
+      <button id="startTest">Start</button>
+      <button id="stopTest">Stop</button>
+      <button id="Reset">Reset</button>
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrap">
+         <p> Accuracy:<span id="Accuracy"></span></p>
+         <p> Speed: <span id="Speed"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
