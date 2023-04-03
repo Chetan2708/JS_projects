@@ -68,6 +68,8 @@ Stop.addEventListener("click",()=>{
     display()
     document.getElementById("mistake").innerText =mistake
     clearInterval(timer)
+  	document.getElementById("Speed").innerText ="0"
+  	document.getElementById("Accuracy").innerText ="0"
 })
 
 Reset.addEventListener("click",()=>{
