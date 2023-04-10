@@ -43,7 +43,7 @@ function randomSelect() {
 	}
     }, 100);
 
-    setTimeout(() => {
+    setTimeout(() =>  {
         clearInterval(interval)
 
         setTimeout(() => {
