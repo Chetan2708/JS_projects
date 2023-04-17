@@ -2,7 +2,7 @@
 h = document.getElementById("h1")
 let i =1
 // const text = "Hey, I am Chetan"
-const texts = ["Hey, I am Chetan" ,  "Happy To meet you"]
+const texts = ["Hey, I am Chetan" ,  " Happy To meet you"]
 let j = 0 
 forward = true
 id = setInterval(() => {
