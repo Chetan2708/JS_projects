@@ -31,11 +31,8 @@ const createData = (newdata) => {
     }, 1000);
   });
 };
-//Promise function 
-
-
+//Promise function (call) ---->
 // createData({name:"Abhay", Profession: "ML engineer" }).then(getData).catch(err => console.log(err))
-
 
 
 
@@ -49,7 +46,6 @@ const createData = (newdata) => {
 //     },1000)
 // }
 // createData({name:"Abhay", Profession: "ML engineer" },getData)
-
 
 
 
