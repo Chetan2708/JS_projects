@@ -26,6 +26,7 @@
 // userdetails.printDetails.call(userdetails2)
 
 
+//Call() ,Apply , Bind
 //Problem --2 :
 //If the function is outside the objects and you have to print objects properties
 let userdetails = {
