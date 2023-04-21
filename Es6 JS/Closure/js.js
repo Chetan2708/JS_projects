@@ -13,7 +13,7 @@ const sum = ((a,b,c)=>{
 })
 
 
-const store = sum(2, 4 ,6)
+const store = sum(2,4,6)
 
 console.log(store.getsumtwo()) //values are retained here when they were called in sum function 
 console.log(store.getsumthree())  
