@@ -26,7 +26,8 @@
 // userdetails.printDetails.call(userdetails2)
 
 
-
+//Problem --2 :
+//If the function is outside the objects and you have to print objects properties
 let userdetails = {
     name:"Chetan Gupta" ,
     age :21,
