@@ -19,7 +19,7 @@ let Student = [
     studentName: "Ash",
     studentClass: 12,
     studentSection: "a",
-    age:20,
+    age:20 ,
   },
 ];
 
