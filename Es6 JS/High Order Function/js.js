@@ -61,7 +61,7 @@ Student.map((i,index)=>(console.log(i.studentName,index)))
 //     return -1
 // }
 // })
-const sorted = Student.sort((i1,i2)=>(i1.studentClass<i2.studentClass ? 1:-1))          //shorter 
+const sorted = Student.sort( (i1,i2)=>(i1.studentClass<i2.studentClass ? 1:-1) )          //shorter 
 console.log(sorted)
 
 
