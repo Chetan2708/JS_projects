@@ -1,5 +1,5 @@
 //Spread Operator
-let a = {
+let a ={
   name: 'chetan',
   age: '18',
   class: '6th sem',
