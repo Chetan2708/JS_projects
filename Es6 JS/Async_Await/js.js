@@ -19,7 +19,7 @@ function getData() {
 // Promise function ---->  
 
 const createData = (newdata) => {
-  return new Promise((resolve, reject) => {
+  return new Promise(( resolve, reject ) => {
     setTimeout(() => {
       let error = true;
       if (error) {
@@ -50,9 +50,9 @@ const createData = (newdata) => {
 
 
 
-//Async and await   ----->
+//Async and await   ------>
 
-async function start(){
+async function start() {
     await createData({name:"Abhay", Profession: "ML engineer" })
     getData()
 }
