@@ -13,17 +13,17 @@ const arr= [
     correct:'c'
 
 },{
-    question: "ARE U 18+?",
+    question: "Is Js the full form of Java?",
     a:"NO",
     b:"YES",
-    c:"I AM ABOVE 50",
+    c:"Who Knows",
     correct:'b'
 },{
-    question: "HTML stands for ?",
-    a:"Hyper text mark language",
-    b:"Hypert text markup language",
-    c:"hyper text markup language",
-    correct:'c'
+    question: "Css is the short form of Cascading Style Sheets ?",
+    a:"NO",
+    b:"Yes",
+    c:"Html is the short form ",
+    correct:'b'
 }
 ]
 const quiz1= document.getElementById("quiz");
