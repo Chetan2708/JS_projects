@@ -3,6 +3,7 @@ const textarea = document.getElementById('textarea')
 
 textarea.focus()
 
+// Event listener for keyup event in the textarea
 textarea.addEventListener('keyup', (e) => { 
     createTags(e.target.value)
 
@@ -15,6 +16,7 @@ textarea.addEventListener('keyup', (e) => {
     }
 })
 
+// Function to create tags based on the input value
 function createTags(input) {
     const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
     
@@ -28,6 +30,7 @@ function createTags(input) {
     })
 }
 
+// Function to randomly select and highlight tags
 function randomSelect() {
     const times = 30
 
@@ -35,11 +38,11 @@ function randomSelect() {
         const randomTag = pickRandomTag()
 	
 	if (randomTag !== undefined) {
-        highlightTag(randomTag)
+            highlightTag(randomTag)
 
-        setTimeout(() => {
-            unHighlightTag(randomTag)
-        }, 100)
+            setTimeout(() => {
+                unHighlightTag(randomTag)
+            }, 100)
 	}
     }, 100);
 
@@ -55,15 +58,18 @@ function randomSelect() {
     }, times * 100)
 }
 
+// Function to pick a random tag from the list
 function pickRandomTag() {
     const tags = document.querySelectorAll('.tag')
     return tags[Math.floor(Math.random() * tags.length)]
 }
 
+// Function to highlight a tag
 function highlightTag(tag) {
     tag.classList.add('highlight')
 }
 
+// Function to remove highlight from a tag
 function unHighlightTag(tag) {
     tag.classList.remove('highlight')
 }
