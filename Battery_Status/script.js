@@ -3,7 +3,7 @@ const batteryStatus = document.querySelector(".Status");
 const Bpercentage = document.querySelector(".percent");
 window.onload = () => {
     if (!navigator.getBattery) {
-      alert("Battery Status Api Is Not Supported ");
+      alert("Battery Status Api  Is Not Supported ");
       return false;
     }
   };
