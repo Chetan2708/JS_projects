@@ -7,7 +7,7 @@ const Password = document.querySelector(".input-text input"); // Get the passwor
 const char = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  number: "0123456789",
+  numbers: "0123456789",
   symbols: "!@#$%^&*(){}[]>?/~"
 };
 
