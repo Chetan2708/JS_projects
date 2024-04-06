@@ -19,9 +19,9 @@ const generatepas = () => {
 
   options.forEach(option => {
     if (option.checked) {
-      if (option.id != "Exclude-duplicates" && option.id != "Include space") {
+      if (option.id != "exc-dup" && option.id != "space") {
         static += char[option.id]; // Add the character set to 'static' based on the selected options
-      } else if (option.id == "Include space") {
+      } else if (option.id == "space") {
         static += ` ${static} `; // Include a space character if the "Include space" option is selected
       } else {
         Excludeduplicate = true; // Set the flag to exclude duplicate characters
